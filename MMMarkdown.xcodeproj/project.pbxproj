@@ -116,6 +116,7 @@
 		BEDDD54A1544E42200EA7D65 /* MMHTMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDDD5491544E42200EA7D65 /* MMHTMLTests.m */; };
 		BEF3421E150CEA6D00BFA0E2 /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF3421B150CEA6D00BFA0E2 /* MMSpanParser.m */; };
 		BEF3421F150CEA6D00BFA0E2 /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF3421B150CEA6D00BFA0E2 /* MMSpanParser.m */; };
+		EDE919DF1A7C4B2200E94339 /* BTAttributedStringGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE919DE1A7C4B2200E94339 /* BTAttributedStringGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -369,6 +370,8 @@
 		BEF3421A150CEA6D00BFA0E2 /* MMSpanParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSpanParser.h; sourceTree = "<group>"; };
 		BEF3421B150CEA6D00BFA0E2 /* MMSpanParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSpanParser.m; sourceTree = "<group>"; };
 		EDD8A11E1A7BED7700B15816 /* MMMarkdown.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = MMMarkdown.podspec; sourceTree = "<group>"; };
+		EDE919DD1A7C4B2200E94339 /* BTAttributedStringGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAttributedStringGenerator.h; sourceTree = "<group>"; };
+		EDE919DE1A7C4B2200E94339 /* BTAttributedStringGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTAttributedStringGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -444,6 +447,8 @@
 		BE813DDF14F893EB00EC9469 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				EDE919DD1A7C4B2200E94339 /* BTAttributedStringGenerator.h */,
+				EDE919DE1A7C4B2200E94339 /* BTAttributedStringGenerator.m */,
 				BE813DE214F893EB00EC9469 /* MMMarkdown.h */,
 				BE813DE314F893EB00EC9469 /* MMMarkdown.m */,
 				BE813DE114F893EB00EC9469 /* MMMarkdown-Prefix.pch */,
@@ -764,6 +769,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDE919DF1A7C4B2200E94339 /* BTAttributedStringGenerator.m in Sources */,
 				BE813E0814F8961D00EC9469 /* MMMarkdown.m in Sources */,
 				BE813E7714F959BC00EC9469 /* MMElement.m in Sources */,
 				BE813E7D14F95B2A00EC9469 /* MMParser.m in Sources */,
