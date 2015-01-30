@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.authors        = { "Matt Diephouse" => "matt@diephouse.com", "Cole Markham" => "cole@ccmcomputing.net" }
   s.source        = { :git => "https://github.com/colemarkham/MMMarkdown.git", :tag =>  "#{s.version}" }
   s.platform      = :ios, "7.0"
-  s.source_files  = "*.{h,m}"
+  s.source_files  = "Source/*.{h,m}"
   s.requires_arc  = true
 end
