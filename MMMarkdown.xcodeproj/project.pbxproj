@@ -368,6 +368,7 @@
 		BEDDD5491544E42200EA7D65 /* MMHTMLTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHTMLTests.m; sourceTree = "<group>"; };
 		BEF3421A150CEA6D00BFA0E2 /* MMSpanParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSpanParser.h; sourceTree = "<group>"; };
 		BEF3421B150CEA6D00BFA0E2 /* MMSpanParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSpanParser.m; sourceTree = "<group>"; };
+		EDD8A11E1A7BED7700B15816 /* MMMarkdown.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = MMMarkdown.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,6 +411,7 @@
 		BE813DCB14F893EB00EC9469 = {
 			isa = PBXGroup;
 			children = (
+				EDD8A11E1A7BED7700B15816 /* MMMarkdown.podspec */,
 				BE813DDF14F893EB00EC9469 /* Source */,
 				BE813E1614F92B6100EC9469 /* CLI */,
 				BE813DF114F893EB00EC9469 /* Tests */,
