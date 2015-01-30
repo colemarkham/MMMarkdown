@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Best of Texas Contest and Apps. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "BTAttributedStringGenerator.h"
 #import "MMElement.h"
 #import "MMParser.h"
@@ -15,6 +16,18 @@
 @implementation BTAttributedStringGenerator
 
 +(void)applyAttributedText:(NSString *)markdown toLabel:(UILabel *)label{
+    if (markdown == nil)
+    {
+        NSString *reason = [NSString stringWithFormat:@"[%@ %@]: nil argument for markdown",
+                            NSStringFromClass(self.class), @"applyAttributedText"];
+        @throw [NSException exceptionWithName:NSInvalidArgumentException reason:reason userInfo:nil];
+    }
+    if (markdown.length == 0) {
+        label.attributedText = nil;
+        label.text = markdown;
+        return;
+    }
+
     NSError *error;
     MMParser *parser = [[MMParser alloc] initWithExtensions:MMMarkdownExtensionsNone];
     MMDocument *document = [parser parseMarkdown:markdown error:&error];
@@ -30,17 +43,7 @@
 
 - (NSAttributedString *)generateAttributedString:(MMDocument *)aDocument
 {
-    if (string == nil)
-    {
-        NSString *reason = [NSString stringWithFormat:@"[%@ %@]: nil argument for markdown",
-                            NSStringFromClass(self.class), NSStringFromSelector(selector)];
-        @throw [NSException exceptionWithName:NSInvalidArgumentException reason:reason userInfo:nil];
-    }
-    
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] init];
-    
-    if (string.length == 0)
-        return attributedString;
     
     for (MMElement *element in aDocument.elements)
     {
